@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-green: rgb(142, 215, 32)
+}
+
+body {
+    background-color: whitesmoke;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.new-task {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.new-task input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.new-task input:hover, .new-task input:valid {
+    border-color: var(--light-green);
+}
+
+.new-task input:focus {
+    outline: none;
+    border-color: var(--light-green);
+}
+
+.new-task button {
+    background-color: var(--light-green);
+    color: white;
+    width: 70px;
+    padding: 10px;
+    font-weight: 800;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.new-task button:hover{
+    background-color: #7dbd1d;
+    transition: .3s;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+    width: 50% ;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: none;
+    padding: 20px;
+}
+
+
+.item-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: whitesmoke;
+}
+
+.item-box img {
+    height: 30px;
+    border: none;
+    position: relative;
+    right: 30px;
+    
+}
+.item-box button {
+    border: none;
+    background-color: whitesmoke;
+}
+
+.container li {
+    height: 30px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    border-radius: 5px;
+}
+
